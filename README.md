@@ -1,2 +1,207 @@
 # my-portfolio
 A clean, responsive personal portfolio website built using HTML and CSS. This site showcases my skills, projects, resume, and contact information — designed to make a strong first impression for internships, freelance work, or job applications.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .skills .bar {
+      margin-bottom: 15px;
+    }
+
+    .bar label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .bar div {
+      height: 20px;
+      background: #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      background: #3498db;
+      width: 80%;
+      border-radius: 10px;
+    }
+
+    .projects {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .card a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .resume a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home -->
+  <header id="home">
+    <h1>Ronit Raj</h1>
+    <p>Welcome to my personal portfolio!</p>
+    <img src="meself.jpg" alt="Your Photo">
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm a passionate student learning web development. I love coding, tech, and solving problems. Currently studying Computer Science at Arya College.</p>
+    <p><strong>Education:</strong> B.Tech in Computer Science<br><strong>Interests:</strong> Programming, Tech YouTube, Blogging</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="bar">
+      <label>HTML</label>
+      <div><span style="width: 90%;"></span></div>
+    </div>
+    <div class="bar">
+      <label>CSS</label>
+      <div><span style="width: 80%;"></span></div>
+    </div>
+    <div class="bar">
+      <label>JavaScript</label>
+      <div><span style="width: 60%;"></span></div>
+    </div>
+    <div class="bar">
+      <label>C Programming</label>
+      <div><span style="width: 75%;"></span></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Stone Paper Scissors</h3>
+        <p>A fun C game uploaded on GitHub.</p>
+        <a href="https://github.com/your-username/sps-game" target="_blank">View on GitHub</a>
+      </div>
+      <div class="card">
+        <h3>My Brother's Trading Website</h3>
+        <p>Portfolio website for a trader, using HTML and CSS.</p>
+        <a href="https://your-brothers-website.com" target="_blank">Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+    <p>You can download my resume below:</p>
+    <a href="resume.pdf" download>Download Resume</a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Connect with me:</p>
+    <a href="www.linkedin.com/in/
+    ronit-raj-114181315
+    " target="_blank">LinkedIn</a>
+    <a href="https://github.com/Ronit049" target="_blank">GitHub</a>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
